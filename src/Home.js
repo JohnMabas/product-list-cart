@@ -12,7 +12,9 @@ import Panna from './images/image-panna-cotta-thumbnail.jpg'
 const Home = () => {
   return (
     <div>
-      <h1>Desserts</h1>
+      <h1 className='text-2xl ml-9 pt-4'>Desserts</h1>
+    
+    <div className='grid grid-rows-3 grid-flow-col gap-4  p-10'>
 
       <div className=''>
         <img className='w-48 h-48' src={waffle} alt='' />
@@ -86,6 +88,8 @@ const Home = () => {
         <p className='text-1xl font-sans text-red-700'>$6.50</p>
       </div>
 
+    </div>
+    
     </div>
   )
 }
