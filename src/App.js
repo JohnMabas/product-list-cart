@@ -1,9 +1,12 @@
 import Home from "./Home";
+import Desserts from "./Desserts";
 
 function App() {
   return (
-    <div className="flex flex-nowrap items-center justify-center  bg-amber-50">
+    <div className="mx-10">
+      <Desserts />
       <Home />
+
 
     </div>
     

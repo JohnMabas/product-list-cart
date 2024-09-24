@@ -11,21 +11,22 @@ import Panna from './images/image-panna-cotta-thumbnail.jpg'
 
 const Home = () => {
   return (
-    <div>
-      <h1 className='text-2xl ml-9 pt-4'>Desserts</h1>
-    
-    <div className='grid grid-rows-3 grid-flow-col gap-4  p-10'>
+    <div className='parent w-full flex  mt-6'>
+
+<div className='firstDiv w-[80%]'>
+
+<div className='grid grid-cols-3  gap-4  p-4'>
 
       <div className=''>
-        <img className='w-48 h-48' src={waffle} alt='' />
-        <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
+        <img className='w-72 h-64' src={waffle} alt='' />
+        <button className=' bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>Waffle</p>
-        <p className='text-1xl font-bold'>Wafffle with Berries</p>
+        <p className='text-1xl font-bold'>Wafffle with Berries</p>  
         <p className='text-1xl font-sans text-red-700'>$6.50</p>
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Creme} alt='' />
+        <img className='w-72 h-64' src={Creme} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>Creme Brulee</p>
         <p className='text-1xl font-bold'>Vanilla Bean Creme Brulee</p>
@@ -33,7 +34,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Macaron} alt='' />
+        <img className='w-72 h-64' src={Macaron} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black' >Add to Cart</button>
         <p className='text-xs font-sans'>Macaron</p>
         <p className='text-1xl font-bold'>Macaron Mix of Five</p>
@@ -41,7 +42,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Tiramisu} alt='' />
+        <img className='w-72 h-64' src={Tiramisu} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>Tiramisu</p>
         <p className='text-1xl font-bold'>Classic Tiramisu</p>
@@ -49,7 +50,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Baklava} alt='' />
+        <img className='w-72 h-64' src={Baklava} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>Baklava</p>
         <p className='text-1xl font-bold'>Pistachio Baklava</p>
@@ -57,7 +58,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Pie} alt='' />
+        <img className='w-72 h-64' src={Pie} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>Pic</p>
         <p className='text-1xl font-bold'>Lemon Meringue Pie</p>
@@ -65,7 +66,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Cake} alt='' />
+        <img className='w-72 h-64' src={Cake} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>Cake</p>
         <p className='text-1xl font-bold'>Red Velvet Cake</p>
@@ -73,7 +74,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Brownie} alt='' />
+        <img className='w-72 h-64' src={Brownie} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>Brownie</p>
         <p className='text-1xl font-bold'>Saited Caramel Brownie</p>
@@ -81,7 +82,7 @@ const Home = () => {
       </div>
 
       <div>
-        <img className='w-48 h-48' src={Panna} alt='' />
+        <img className='w-72 h-64' src={Panna} alt='' />
         <button className='bg-white text-black px-2 py-1  m-2 rounded-full border-solid border-2 border-black'>Add to Cart</button>
         <p className='text-xs font-sans'>panna Cotta</p>
         <p className='text-1xl font-bold'>Vanilla panna Cotta</p>
@@ -89,7 +90,29 @@ const Home = () => {
       </div>
 
     </div>
+
+</div>
+
+<div className='secondDiv w-[20%] flex justify-center'>
+<div className=' w-full h-screen space-y-4 bg-white shadow-xl  items-center'>
+  <h3 className='font-semibold text-center'>Your Cart</h3>
+  <p className='flex justify-center'>Your Cart is Empty.</p>
+  <hr className='w-full '/>
+  <h3 className='mt-2 text-center font-semibold'>Total: $0.00</h3>
+  <div className='flex justify-center'>
+  <button className=' px-20 rounded-md p-3 bg-orange-500'>Confirm</button>
+
+  </div>
+
+</div>
+
+</div>
+
+
+
     
+    
+
     </div>
   )
 }
